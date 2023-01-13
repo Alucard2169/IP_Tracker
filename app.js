@@ -19,10 +19,10 @@ app.use(express.static(path.join(__dirname+'/public')))
 
 
 
-app.get(`https://${process.env.VERCEL_URL}/api/:ip`, async (req, res) => {
+app.get(`/api/:ip`, async (req, res) => {
     try{
         const ipAddress = req.params.ip
-        console.log(ipAddress)
+
     const data = await axios.get(`https://geo.ipify.org/api/v2/country,city?apiKey=${process.env.API_KEY}&ipAddress=${ipAddress}`);
     res.send(data.data)
     }
