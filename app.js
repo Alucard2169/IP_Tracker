@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
 
 app.get(`/api/:ip`, async (req, res) => {
     const ipAddress = req.params.ip
-    const data = await axios.get(`https://geo.ipify.org/api/v2/country,city?apiKey=${process.env.API_KEY}&ipAddress=${ipAddress}`);
+    const data = await axios.get(`https://get.geojs.io/v1/ip/geo/{ipAddress}.json`);
     res.send(data.data)
 })
 
