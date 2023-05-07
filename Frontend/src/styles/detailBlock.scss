@@ -1,0 +1,66 @@
+.detailBlock {
+    position: relative;
+    box-shadow: 0 0 10px rgb(45, 45, 45);
+    width: 85%;
+    margin-inline: auto;
+    border-radius: 15px;
+    background-color: white;
+    margin-top: 1.5rem;
+    padding: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    z-index: 10;
+
+    hr {
+        visibility: hidden;
+    }
+
+    .detail {
+        span {
+            font-size: .7rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: hsl(0, 0%, 59%);
+        }
+
+        p {
+            color: hsl(0, 0%, 17%);
+            margin-top: .2rem;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+    }
+}
+
+.error {
+    background-color: white;
+    width: 80%;
+    margin-top: 1.5rem;
+    margin-inline: auto;
+    padding: 1rem;
+    border-radius: 10px;
+    color: red;
+}
+
+
+@media only screen and (min-width: 800px) {
+    .detailBlock {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem;
+        margin-top: 2rem;
+
+        hr {
+            visibility: visible;
+            background-color: none;
+            width: .1px;
+            border: .2px gray solid;
+        }
+
+        .detail {
+            width: 100%;
+            text-align: left;
+        }
+    }
+}

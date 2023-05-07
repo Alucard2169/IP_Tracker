@@ -1,0 +1,12 @@
+.leaflet-container {
+  position: relative;
+  height: calc(100vh - 15.5rem);
+  width: 100%;
+  z-index: 1;
+}
+
+.map {
+  position: relative;
+  height: calc(100vh - 15.5rem);
+  margin-top: auto;
+}/*# sourceMappingURL=map.css.map */

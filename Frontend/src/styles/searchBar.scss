@@ -1,0 +1,57 @@
+.searchBar {
+    width: 85%;
+    margin-inline: auto;
+    display: flex;
+    overflow: hidden;
+    gap: 0;
+
+    .ipLabel {
+        width: 82%;
+
+    }
+
+    .textField {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+        width: 100%;
+        border-radius: 15px 0 0 15px;
+        border: none;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .searchButton {
+        background-color: black;
+        border: none;
+        width: 18%;
+        border-radius: 0 15px 15px 0;
+        cursor: pointer;
+
+        img {
+            width: 1rem;
+        }
+    }
+
+}
+
+
+@media only screen and (min-width: 800px) {
+    .searchBar {
+        margin: 2.5rem auto;
+        width: 45%;
+
+        .ipLabel {
+            width: 90%;
+        }
+
+        .textField {
+            width: 100%;
+        }
+
+        .searchButton {
+            width: 10%;
+        }
+    }
+}

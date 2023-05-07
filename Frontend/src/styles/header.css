@@ -1,0 +1,10 @@
+header {
+  background: url("../assets/images/pattern-bg.png") no-repeat top;
+  height: 15.5rem;
+}
+header .mainHeading {
+  margin: 1.3rem auto;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+}/*# sourceMappingURL=header.css.map */
